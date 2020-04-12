@@ -1,0 +1,29 @@
+PODS:
+  - ImageViewer.swift (3.0.12):
+    - SDWebImage
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - SDWebImage (5.7.2):
+    - SDWebImage/Core (= 5.7.2)
+  - SDWebImage/Core (5.7.2)
+
+DEPENDENCIES:
+  - ImageViewer.swift (~> 3.0)
+  - NVActivityIndicatorView
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - ImageViewer.swift
+    - NVActivityIndicatorView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  ImageViewer.swift: d4769c57ff8aef6da7e01bb9283f8554469b2498
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  SDWebImage: d9ea4959d99c52276dfada481987018fcaea3d58
+
+PODFILE CHECKSUM: e0f65ca2770b96e31ebcb709e178f31296ea1c0a
+
+COCOAPODS: 1.9.1

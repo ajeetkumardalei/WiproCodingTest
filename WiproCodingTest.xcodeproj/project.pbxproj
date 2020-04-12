@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57EA1D61BD91148DFF8AA1A2 /* Pods_WiproCodingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C470A45E1FA36E7C96A96A /* Pods_WiproCodingTest.framework */; };
+		DF6E08982442011B008A4775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08972442011B008A4775 /* AppDelegate.swift */; };
+		DF6E089A2442011B008A4775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08992442011B008A4775 /* SceneDelegate.swift */; };
+		DF6E08A12442011D008A4775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08A02442011D008A4775 /* Assets.xcassets */; };
+		DF6E08AF2442011D008A4775 /* WiproCodingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08AE2442011D008A4775 /* WiproCodingTestTests.swift */; };
+		DF6E08BA2442011D008A4775 /* WiproCodingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */; };
+		DF6E08CA24420223008A4775 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08C824420223008A4775 /* DashboardCell.swift */; };
+		DF6E08CB24420223008A4775 /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08C924420223008A4775 /* DashboardCell.xib */; };
+		DF6E08D224420588008A4775 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CD24420588008A4775 /* Constant.swift */; };
+		DF6E08D324420588008A4775 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CE24420588008A4775 /* Model.swift */; };
+		DF6E08D424420588008A4775 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CF24420588008A4775 /* APIManager.swift */; };
+		DF6E08D524420588008A4775 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08D024420588008A4775 /* Extension.swift */; };
+		DF6E08D624420588008A4775 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08D124420588008A4775 /* Helper.swift */; };
+		DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */; };
+		DF6E08DD244205DC008A4775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08DA244205DB008A4775 /* Main.storyboard */; };
+		DF6E08E024420613008A4775 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08DF24420613008A4775 /* DashboardViewModel.swift */; };
+		DF6E08E324420626008A4775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08E224420626008A4775 /* ViewController.swift */; };
+		DF6E08E724420D97008A4775 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08E624420D97008A4775 /* Sample.json */; };
+		EBF7A32B941572962A63EE57 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADD5C3F5816F6596A0F6A97 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework */; };
+		FB123B04347C6A310107DE92 /* Pods_WiproCodingTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE1DE74D2AACB48ACB58DC /* Pods_WiproCodingTestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF6E08AB2442011D008A4775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6E088C2442011B008A4775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6E08932442011B008A4775;
+			remoteInfo = WiproCodingTest;
+		};
+		DF6E08B62442011D008A4775 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF6E088C2442011B008A4775 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF6E08932442011B008A4775;
+			remoteInfo = WiproCodingTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1ADD5C3F5816F6596A0F6A97 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproCodingTest_WiproCodingTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFD7FCBFCDE880AC7F32DD9 /* Pods-WiproCodingTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTest.release.xcconfig"; path = "Target Support Files/Pods-WiproCodingTest/Pods-WiproCodingTest.release.xcconfig"; sourceTree = "<group>"; };
+		37C470A45E1FA36E7C96A96A /* Pods_WiproCodingTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproCodingTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B14D9DD5D9457C3B8C3A66 /* Pods-WiproCodingTest-WiproCodingTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTest-WiproCodingTestUITests.release.xcconfig"; path = "Target Support Files/Pods-WiproCodingTest-WiproCodingTestUITests/Pods-WiproCodingTest-WiproCodingTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A2188F13EA6DEDD36667384 /* Pods-WiproCodingTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTest.debug.xcconfig"; path = "Target Support Files/Pods-WiproCodingTest/Pods-WiproCodingTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8BCCDCF672412B7D8FFBC1E8 /* Pods-WiproCodingTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTestTests.release.xcconfig"; path = "Target Support Files/Pods-WiproCodingTestTests/Pods-WiproCodingTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		A46FCD60585E1E0F406BE661 /* Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-WiproCodingTest-WiproCodingTestUITests/Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7FE1DE74D2AACB48ACB58DC /* Pods_WiproCodingTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproCodingTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6E08942442011B008A4775 /* WiproCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6E08972442011B008A4775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF6E08992442011B008A4775 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DF6E08A02442011D008A4775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF6E08A52442011D008A4775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6E08AA2442011D008A4775 /* WiproCodingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproCodingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6E08AE2442011D008A4775 /* WiproCodingTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproCodingTestTests.swift; sourceTree = "<group>"; };
+		DF6E08B02442011D008A4775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6E08B52442011D008A4775 /* WiproCodingTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiproCodingTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproCodingTestUITests.swift; sourceTree = "<group>"; };
+		DF6E08BB2442011D008A4775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF6E08C824420223008A4775 /* DashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		DF6E08C924420223008A4775 /* DashboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
+		DF6E08CD24420588008A4775 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		DF6E08CE24420588008A4775 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DF6E08CF24420588008A4775 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DF6E08D024420588008A4775 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DF6E08D124420588008A4775 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DF6E08D9244205DB008A4775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF6E08DB244205DB008A4775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF6E08DF24420613008A4775 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		DF6E08E224420626008A4775 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF6E08E624420D97008A4775 /* Sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
+		E4839826A081FB9751011066 /* Pods-WiproCodingTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WiproCodingTestTests/Pods-WiproCodingTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF6E08912442011B008A4775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57EA1D61BD91148DFF8AA1A2 /* Pods_WiproCodingTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6E08A72442011D008A4775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB123B04347C6A310107DE92 /* Pods_WiproCodingTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6E08B22442011D008A4775 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF7A32B941572962A63EE57 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6369D6A492E92B335F1FE02D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37C470A45E1FA36E7C96A96A /* Pods_WiproCodingTest.framework */,
+				1ADD5C3F5816F6596A0F6A97 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework */,
+				D7FE1DE74D2AACB48ACB58DC /* Pods_WiproCodingTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6877733546DB38A662698201 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A2188F13EA6DEDD36667384 /* Pods-WiproCodingTest.debug.xcconfig */,
+				1FFD7FCBFCDE880AC7F32DD9 /* Pods-WiproCodingTest.release.xcconfig */,
+				A46FCD60585E1E0F406BE661 /* Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig */,
+				84B14D9DD5D9457C3B8C3A66 /* Pods-WiproCodingTest-WiproCodingTestUITests.release.xcconfig */,
+				E4839826A081FB9751011066 /* Pods-WiproCodingTestTests.debug.xcconfig */,
+				8BCCDCF672412B7D8FFBC1E8 /* Pods-WiproCodingTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF6E088B2442011B008A4775 = {
+			isa = PBXGroup;
+			children = (
+				DF6E08962442011B008A4775 /* WiproCodingTest */,
+				DF6E08AD2442011D008A4775 /* WiproCodingTestTests */,
+				DF6E08B82442011D008A4775 /* WiproCodingTestUITests */,
+				DF6E08952442011B008A4775 /* Products */,
+				6877733546DB38A662698201 /* Pods */,
+				6369D6A492E92B335F1FE02D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF6E08952442011B008A4775 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08942442011B008A4775 /* WiproCodingTest.app */,
+				DF6E08AA2442011D008A4775 /* WiproCodingTestTests.xctest */,
+				DF6E08B52442011D008A4775 /* WiproCodingTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF6E08962442011B008A4775 /* WiproCodingTest */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08C724420223008A4775 /* Cell */,
+				DF6E08CC24420588008A4775 /* Model */,
+				DF6E08D7244205DB008A4775 /* View */,
+				DF6E08DE24420613008A4775 /* ViewModel */,
+				DF6E08E124420626008A4775 /* ViewController */,
+				DF6E08E424420638008A4775 /* AppDelegate */,
+				DF6E08E524420658008A4775 /* Resource */,
+				DF6E08A52442011D008A4775 /* Info.plist */,
+			);
+			path = WiproCodingTest;
+			sourceTree = "<group>";
+		};
+		DF6E08AD2442011D008A4775 /* WiproCodingTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08AE2442011D008A4775 /* WiproCodingTestTests.swift */,
+				DF6E08B02442011D008A4775 /* Info.plist */,
+			);
+			path = WiproCodingTestTests;
+			sourceTree = "<group>";
+		};
+		DF6E08B82442011D008A4775 /* WiproCodingTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */,
+				DF6E08BB2442011D008A4775 /* Info.plist */,
+			);
+			path = WiproCodingTestUITests;
+			sourceTree = "<group>";
+		};
+		DF6E08C724420223008A4775 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08C824420223008A4775 /* DashboardCell.swift */,
+				DF6E08C924420223008A4775 /* DashboardCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DF6E08CC24420588008A4775 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08CD24420588008A4775 /* Constant.swift */,
+				DF6E08CE24420588008A4775 /* Model.swift */,
+				DF6E08CF24420588008A4775 /* APIManager.swift */,
+				DF6E08D024420588008A4775 /* Extension.swift */,
+				DF6E08D124420588008A4775 /* Helper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF6E08D7244205DB008A4775 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */,
+				DF6E08DA244205DB008A4775 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF6E08DE24420613008A4775 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08DF24420613008A4775 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF6E08E124420626008A4775 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08E224420626008A4775 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DF6E08E424420638008A4775 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08972442011B008A4775 /* AppDelegate.swift */,
+				DF6E08992442011B008A4775 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DF6E08E524420658008A4775 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DF6E08A02442011D008A4775 /* Assets.xcassets */,
+				DF6E08E624420D97008A4775 /* Sample.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF6E08932442011B008A4775 /* WiproCodingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6E08BE2442011D008A4775 /* Build configuration list for PBXNativeTarget "WiproCodingTest" */;
+			buildPhases = (
+				D46CB007BCFEF09D45161111 /* [CP] Check Pods Manifest.lock */,
+				DF6E08902442011B008A4775 /* Sources */,
+				DF6E08912442011B008A4775 /* Frameworks */,
+				DF6E08922442011B008A4775 /* Resources */,
+				441512D4078CF17D03ED3BB4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiproCodingTest;
+			productName = WiproCodingTest;
+			productReference = DF6E08942442011B008A4775 /* WiproCodingTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF6E08A92442011D008A4775 /* WiproCodingTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6E08C12442011D008A4775 /* Build configuration list for PBXNativeTarget "WiproCodingTestTests" */;
+			buildPhases = (
+				DA3793CAE3C014945F0392ED /* [CP] Check Pods Manifest.lock */,
+				DF6E08A62442011D008A4775 /* Sources */,
+				DF6E08A72442011D008A4775 /* Frameworks */,
+				DF6E08A82442011D008A4775 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6E08AC2442011D008A4775 /* PBXTargetDependency */,
+			);
+			name = WiproCodingTestTests;
+			productName = WiproCodingTestTests;
+			productReference = DF6E08AA2442011D008A4775 /* WiproCodingTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF6E08B42442011D008A4775 /* WiproCodingTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF6E08C42442011D008A4775 /* Build configuration list for PBXNativeTarget "WiproCodingTestUITests" */;
+			buildPhases = (
+				2C4A8573F0366F746EAA3A3B /* [CP] Check Pods Manifest.lock */,
+				DF6E08B12442011D008A4775 /* Sources */,
+				DF6E08B22442011D008A4775 /* Frameworks */,
+				DF6E08B32442011D008A4775 /* Resources */,
+				EC51A6BD4496BD4DAC7F4CE0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF6E08B72442011D008A4775 /* PBXTargetDependency */,
+			);
+			name = WiproCodingTestUITests;
+			productName = WiproCodingTestUITests;
+			productReference = DF6E08B52442011D008A4775 /* WiproCodingTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF6E088C2442011B008A4775 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = AjeetZone;
+				TargetAttributes = {
+					DF6E08932442011B008A4775 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					DF6E08A92442011D008A4775 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = DF6E08932442011B008A4775;
+					};
+					DF6E08B42442011D008A4775 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = DF6E08932442011B008A4775;
+					};
+				};
+			};
+			buildConfigurationList = DF6E088F2442011B008A4775 /* Build configuration list for PBXProject "WiproCodingTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF6E088B2442011B008A4775;
+			productRefGroup = DF6E08952442011B008A4775 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF6E08932442011B008A4775 /* WiproCodingTest */,
+				DF6E08A92442011D008A4775 /* WiproCodingTestTests */,
+				DF6E08B42442011D008A4775 /* WiproCodingTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF6E08922442011B008A4775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */,
+				DF6E08E724420D97008A4775 /* Sample.json in Resources */,
+				DF6E08A12442011D008A4775 /* Assets.xcassets in Resources */,
+				DF6E08CB24420223008A4775 /* DashboardCell.xib in Resources */,
+				DF6E08DD244205DC008A4775 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6E08A82442011D008A4775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6E08B32442011D008A4775 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C4A8573F0366F746EAA3A3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiproCodingTest-WiproCodingTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		441512D4078CF17D03ED3BB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproCodingTest/Pods-WiproCodingTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproCodingTest/Pods-WiproCodingTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiproCodingTest/Pods-WiproCodingTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D46CB007BCFEF09D45161111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiproCodingTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA3793CAE3C014945F0392ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiproCodingTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC51A6BD4496BD4DAC7F4CE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproCodingTest-WiproCodingTestUITests/Pods-WiproCodingTest-WiproCodingTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiproCodingTest-WiproCodingTestUITests/Pods-WiproCodingTest-WiproCodingTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiproCodingTest-WiproCodingTestUITests/Pods-WiproCodingTest-WiproCodingTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF6E08902442011B008A4775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6E08E324420626008A4775 /* ViewController.swift in Sources */,
+				DF6E08E024420613008A4775 /* DashboardViewModel.swift in Sources */,
+				DF6E08982442011B008A4775 /* AppDelegate.swift in Sources */,
+				DF6E08D224420588008A4775 /* Constant.swift in Sources */,
+				DF6E08D324420588008A4775 /* Model.swift in Sources */,
+				DF6E08CA24420223008A4775 /* DashboardCell.swift in Sources */,
+				DF6E08D624420588008A4775 /* Helper.swift in Sources */,
+				DF6E089A2442011B008A4775 /* SceneDelegate.swift in Sources */,
+				DF6E08D424420588008A4775 /* APIManager.swift in Sources */,
+				DF6E08D524420588008A4775 /* Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6E08A62442011D008A4775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6E08AF2442011D008A4775 /* WiproCodingTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6E08B12442011D008A4775 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF6E08BA2442011D008A4775 /* WiproCodingTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF6E08AC2442011D008A4775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6E08932442011B008A4775 /* WiproCodingTest */;
+			targetProxy = DF6E08AB2442011D008A4775 /* PBXContainerItemProxy */;
+		};
+		DF6E08B72442011D008A4775 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF6E08932442011B008A4775 /* WiproCodingTest */;
+			targetProxy = DF6E08B62442011D008A4775 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6E08D9244205DB008A4775 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DF6E08DA244205DB008A4775 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF6E08DB244205DB008A4775 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF6E08BC2442011D008A4775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF6E08BD2442011D008A4775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF6E08BF2442011D008A4775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2188F13EA6DEDD36667384 /* Pods-WiproCodingTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WiproCodingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF6E08C02442011D008A4775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FFD7FCBFCDE880AC7F32DD9 /* Pods-WiproCodingTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = WiproCodingTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF6E08C22442011D008A4775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4839826A081FB9751011066 /* Pods-WiproCodingTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproCodingTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiproCodingTest.app/WiproCodingTest";
+			};
+			name = Debug;
+		};
+		DF6E08C32442011D008A4775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BCCDCF672412B7D8FFBC1E8 /* Pods-WiproCodingTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproCodingTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiproCodingTest.app/WiproCodingTest";
+			};
+			name = Release;
+		};
+		DF6E08C52442011D008A4775 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A46FCD60585E1E0F406BE661 /* Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproCodingTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiproCodingTest;
+			};
+			name = Debug;
+		};
+		DF6E08C62442011D008A4775 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B14D9DD5D9457C3B8C3A66 /* Pods-WiproCodingTest-WiproCodingTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WiproCodingTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WiproCodingTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF6E088F2442011B008A4775 /* Build configuration list for PBXProject "WiproCodingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6E08BC2442011D008A4775 /* Debug */,
+				DF6E08BD2442011D008A4775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6E08BE2442011D008A4775 /* Build configuration list for PBXNativeTarget "WiproCodingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6E08BF2442011D008A4775 /* Debug */,
+				DF6E08C02442011D008A4775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6E08C12442011D008A4775 /* Build configuration list for PBXNativeTarget "WiproCodingTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6E08C22442011D008A4775 /* Debug */,
+				DF6E08C32442011D008A4775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF6E08C42442011D008A4775 /* Build configuration list for PBXNativeTarget "WiproCodingTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF6E08C52442011D008A4775 /* Debug */,
+				DF6E08C62442011D008A4775 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF6E088C2442011B008A4775 /* Project object */;
+}
