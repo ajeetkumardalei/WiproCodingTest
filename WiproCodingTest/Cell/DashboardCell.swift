@@ -10,23 +10,25 @@ import UIKit
 import SDWebImage
 
 
-class DashboardCell: UITableViewCell {
-    static let cellIdentifier = "DashboardCell"
 
-    @IBOutlet weak var imgvw: UIImageView!
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblDesc: UILabel!
+class DashboardCell: UITableViewCell {
+   
+    private let imgvw = UIImageView()
+    private let lblTitle = UILabel()
+    private let lblDescription = UILabel()
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgvw.contentMode = .scaleAspectFit
+        imgvw.setRoundCornder(0.6, .black)
         imgvw.isUserInteractionEnabled = true
-        imgvw.setRoundCornder(0.6, .darkGray)
         lblTitle.font = UIFont.boldSystemFont(ofSize: 16)
-        lblDesc.textColor = .darkGray
-
+        lblDescription.textColor = .darkGray
         lblTitle.lineBreakMode = NSLineBreakMode.byWordWrapping
-        lblDesc.lineBreakMode = NSLineBreakMode.byWordWrapping
+        lblDescription.lineBreakMode = NSLineBreakMode.byWordWrapping
+        lblTitle.numberOfLines = 0
+        lblDescription.numberOfLines = 0
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,20 +37,55 @@ class DashboardCell: UITableViewCell {
     
     func configureCell(with item:Row) {
         lblTitle.text = item.title ?? "N/A"
-        lblDesc.text = item.description ?? "N/A"
-                
-        if let strImgURL = item.imageHref {
-            imgvw.setImageFromURL(strImgURL: strImgURL, isShowIndicator: true, placeholderimg: UIImage(named: placeholderImg)) { (isTrue) in }
-        }
+        lblDescription.text = item.description ?? "N/A"
         
+        if let strImgURL = item.imageHref {
+            imgvw.setImageFromAlmofireURL(strImgURL: strImgURL, isShowIndicator: true, placeholderimg: Placeholder.noImage, completionHandler: { (isSuccess) in
+                debugPrint(DownloadManager.succss)
+            })
+        }
+            
         self.imgvw.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:))))
-
     }
-    
+        
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
         tappedImage.setupImageViewer()
     }
 
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+
+        contentView.addSubview(imgvw)
+        contentView.addSubview(lblTitle)
+        contentView.addSubview(lblDescription)
+
+        imgvw.translatesAutoresizingMaskIntoConstraints = false
+        imgvw.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor).isActive = true
+        imgvw.bottomAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        imgvw.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor).isActive = true
+        imgvw.rightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.rightAnchor).isActive = true
+        let heightConstraint = imgvw.heightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.widthAnchor, multiplier: 0.6)
+        heightConstraint.priority = UILayoutPriority.defaultLow
+        heightConstraint.isActive = true
+
+        lblTitle.translatesAutoresizingMaskIntoConstraints = false
+        lblTitle.topAnchor.constraint(equalTo: imgvw.safeAreaLayoutGuide.topAnchor).isActive = true
+        lblTitle.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor).isActive = true
+        lblTitle.rightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.rightAnchor).isActive = true
+        lblTitle.numberOfLines = 0
+
+        lblDescription.translatesAutoresizingMaskIntoConstraints = false
+        lblDescription.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor).isActive = true
+        lblDescription.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor).isActive = true
+        lblDescription.rightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.rightAnchor).isActive = true
+        lblDescription.bottomAnchor.constraint(equalTo: imgvw.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        lblDescription.numberOfLines = 0
+
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
 }

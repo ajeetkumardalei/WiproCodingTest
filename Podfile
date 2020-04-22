@@ -6,9 +6,9 @@ target 'WiproCodingTest' do
   use_frameworks!
 
   # Pods for WiproCodingTest
-  pod 'SDWebImage'
   pod 'NVActivityIndicatorView'
   pod 'ImageViewer.swift', '~> 3.0'
+  pod 'AlamofireImage'
 
   target 'WiproCodingTestTests' do
     inherit! :search_paths

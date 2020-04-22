@@ -3,4 +3,86 @@
    uuid = "94A4AC00-24BB-41E9-84F2-48DD19881E37"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED440816-B447-49A5-ACEE-A97C5DFA8833"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproCodingTest/Cell/DashboardCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "configureCell(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C46B4CC9-9885-4D3B-A547-00BE72368E79"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproCodingTest/ViewController/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "getAboutCanada()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C46B4CC9-9885-4D3B-A547-00BE72368E79 - c48ed8653e35e659"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WiproCodingTest.ViewController.getAboutCanada() -&gt; ()"
+                  moduleName = "WiproCodingTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajeetzone/Desktop/Project/Practice/InterView_Project/Company/Wipro/WiproCodingTest/WiproCodingTest/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "1296">
+               </Location>
+               <Location
+                  uuid = "C46B4CC9-9885-4D3B-A547-00BE72368E79 - 4981b14e1ecc0e6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in WiproCodingTest.ViewController.getAboutCanada() -&gt; ()"
+                  moduleName = "WiproCodingTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ajeetzone/Desktop/Project/Practice/InterView_Project/Company/Wipro/WiproCodingTest/WiproCodingTest/ViewController/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "368D7907-3C20-4E3F-BB22-E93AFFF40066"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WiproCodingTest/Cell/DashboardCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "imageTapped(tapGestureRecognizer:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

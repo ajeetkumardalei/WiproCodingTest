@@ -25,7 +25,6 @@ class DashboardViewModel: NSObject {
     static var shared = DashboardViewModel()
     weak var delegate:DashboardDelegate?
     
-    var refreshCtrl = UIRefreshControl()
     var canadaInfoModel = CanadaInfo()
     let dispatchGrp = DispatchGroup()
     
@@ -35,29 +34,16 @@ class DashboardViewModel: NSObject {
     }
     
     func apiCallForDashboard(_ isShowLoader:Bool, completionHandler:@escaping(_ success:Bool) -> Void) {
-        if isShowLoader {
-            Helper.sharedInstance.showLoader()
-        }
-        
         dispatchGrp.enter()
-        
+
         APIManager.shared.getCanadaInfo { (result) in
-            if result != nil {
-                self.canadaInfoModel = result
-                completionHandler(true)
-            } else {
-                completionHandler(false)
-            }
-            
+            self.canadaInfoModel = result
+            completionHandler(true)
         }
-            
             
         self.dispatchGrp.leave()
         
         dispatchGrp.notify(queue: .main) {
-            if isShowLoader {
-                Helper.sharedInstance.hideLoader()
-            }
             
             self.delegate?.updateView()
         }

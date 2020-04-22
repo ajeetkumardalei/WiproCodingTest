@@ -14,7 +14,6 @@
 		DF6E08AF2442011D008A4775 /* WiproCodingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08AE2442011D008A4775 /* WiproCodingTestTests.swift */; };
 		DF6E08BA2442011D008A4775 /* WiproCodingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */; };
 		DF6E08CA24420223008A4775 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08C824420223008A4775 /* DashboardCell.swift */; };
-		DF6E08CB24420223008A4775 /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08C924420223008A4775 /* DashboardCell.xib */; };
 		DF6E08D224420588008A4775 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CD24420588008A4775 /* Constant.swift */; };
 		DF6E08D324420588008A4775 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CE24420588008A4775 /* Model.swift */; };
 		DF6E08D424420588008A4775 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CF24420588008A4775 /* APIManager.swift */; };
@@ -67,7 +66,6 @@
 		DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproCodingTestUITests.swift; sourceTree = "<group>"; };
 		DF6E08BB2442011D008A4775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF6E08C824420223008A4775 /* DashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
-		DF6E08C924420223008A4775 /* DashboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
 		DF6E08CD24420588008A4775 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		DF6E08CE24420588008A4775 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		DF6E08CF24420588008A4775 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -191,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				DF6E08C824420223008A4775 /* DashboardCell.swift */,
-				DF6E08C924420223008A4775 /* DashboardCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -200,10 +197,10 @@
 			isa = PBXGroup;
 			children = (
 				DF6E08CD24420588008A4775 /* Constant.swift */,
-				DF6E08CE24420588008A4775 /* Model.swift */,
-				DF6E08CF24420588008A4775 /* APIManager.swift */,
 				DF6E08D024420588008A4775 /* Extension.swift */,
+				DF6E08CE24420588008A4775 /* Model.swift */,
 				DF6E08D124420588008A4775 /* Helper.swift */,
+				DF6E08CF24420588008A4775 /* APIManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -363,7 +360,6 @@
 				DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */,
 				DF6E08E724420D97008A4775 /* Sample.json in Resources */,
 				DF6E08A12442011D008A4775 /* Assets.xcassets in Resources */,
-				DF6E08CB24420223008A4775 /* DashboardCell.xib in Resources */,
 				DF6E08DD244205DC008A4775 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,6 +674,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,6 +695,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
