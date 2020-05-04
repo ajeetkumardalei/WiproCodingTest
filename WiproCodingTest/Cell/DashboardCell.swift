@@ -50,9 +50,9 @@ class DashboardCell: UITableViewCell {
                 let img = UIImageView()
                 img.contentMode = .scaleAspectFill
                 img.translatesAutoresizingMaskIntoConstraints = false
-                img.layer.cornerRadius = 35
                 img.clipsToBounds = true
                 img.isUserInteractionEnabled = true
+                img.setRoundCornder(0.4, .gray)
                 return img
                 
             }()
@@ -80,15 +80,6 @@ class DashboardCell: UITableViewCell {
                 return label
             }()
             
-            let countryImageView:UIImageView = {
-                let img = UIImageView()
-                img.contentMode = .scaleAspectFill // without this your image will shrink and looks ugly
-                img.translatesAutoresizingMaskIntoConstraints = false
-                img.layer.cornerRadius = 13
-                img.clipsToBounds = true
-                return img
-            }()
-
             override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
                 super.init(style: style, reuseIdentifier: reuseIdentifier)
                 
@@ -103,19 +94,19 @@ class DashboardCell: UITableViewCell {
                 profileImageView.heightAnchor.constraint(equalToConstant:70).isActive = true
                 
                 containerView.centerYAnchor.constraint(equalTo:self.contentView.centerYAnchor).isActive = true
-                containerView.leadingAnchor.constraint(equalTo:self.profileImageView.trailingAnchor, constant:10).isActive = true
-                containerView.trailingAnchor.constraint(equalTo:self.contentView.trailingAnchor, constant:-10).isActive = true
-                containerView.heightAnchor.constraint(equalToConstant:40).isActive = true
+                containerView.leadingAnchor.constraint(equalTo:self.profileImageView.trailingAnchor, constant:15).isActive = true
+                containerView.trailingAnchor.constraint(equalTo:self.contentView.trailingAnchor, constant:0).isActive = true
+                containerView.heightAnchor.constraint(equalToConstant:100).isActive = true
                 
                 nameLabel.topAnchor.constraint(equalTo:self.containerView.topAnchor).isActive = true
-                nameLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
-                nameLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor).isActive = true
+                nameLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor, constant: 0).isActive = true
+                nameLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor, constant: -15).isActive = true
                 
-                jobTitleDetailedLabel.topAnchor.constraint(equalTo:self.nameLabel.bottomAnchor).isActive = true
-                jobTitleDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
-                jobTitleDetailedLabel.topAnchor.constraint(equalTo:self.nameLabel.bottomAnchor).isActive = true
-                jobTitleDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
-                
+                jobTitleDetailedLabel.topAnchor.constraint(equalTo:self.nameLabel.bottomAnchor, constant: 4).isActive = true
+                jobTitleDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor, constant: 0).isActive = true
+                jobTitleDetailedLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor, constant: -15).isActive = true
+                jobTitleDetailedLabel.bottomAnchor.constraint(equalTo:self.contentView.bottomAnchor, constant: -4).isActive = true
+
             }
             
             required init?(coder aDecoder: NSCoder) {

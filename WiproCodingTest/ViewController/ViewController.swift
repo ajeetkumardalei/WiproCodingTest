@@ -68,7 +68,7 @@ class ViewController: UIViewController {
         
         tblvw.tableFooterView = UIView()
         tblvw.estimatedRowHeight = UITableView.automaticDimension
-        tblvw.rowHeight = 100
+        tblvw.rowHeight = 120
 
         if #available(iOS 10.0, *) {
             tblvw.refreshControl = refreshCtrl
