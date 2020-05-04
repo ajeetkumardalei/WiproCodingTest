@@ -7,28 +7,14 @@
 //
 
 import UIKit
-import SDWebImage
+import ImageViewer_swift
 
 
 
 class DashboardCell: UITableViewCell {
-   
-    private let imgvw = UIImageView()
-    private let lblTitle = UILabel()
-    private let lblDescription = UILabel()
-
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgvw.setRoundCornder(0.6, .black)
-        imgvw.isUserInteractionEnabled = true
-        lblTitle.font = UIFont.boldSystemFont(ofSize: 16)
-        lblDescription.textColor = .darkGray
-        lblTitle.lineBreakMode = NSLineBreakMode.byWordWrapping
-        lblDescription.lineBreakMode = NSLineBreakMode.byWordWrapping
-        lblTitle.numberOfLines = 0
-        lblDescription.numberOfLines = 0
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -36,16 +22,16 @@ class DashboardCell: UITableViewCell {
     }
     
     func configureCell(with item:Row) {
-        lblTitle.text = item.title ?? "N/A"
-        lblDescription.text = item.description ?? "N/A"
+        nameLabel.text = item.title ?? "Not Available"
+        jobTitleDetailedLabel.text = item.description ?? "Not Available"
         
         if let strImgURL = item.imageHref {
-            imgvw.setImageFromAlmofireURL(strImgURL: strImgURL, isShowIndicator: true, placeholderimg: Placeholder.noImage, completionHandler: { (isSuccess) in
+            profileImageView.setImageFromAlmofireURL(strImgURL: strImgURL, isShowIndicator: true, placeholderimg: Placeholder.noImage, completionHandler: { (isSuccess) in
                 debugPrint(DownloadManager.succss)
             })
         }
             
-        self.imgvw.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:))))
+        self.profileImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:))))
     }
         
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
@@ -53,39 +39,89 @@ class DashboardCell: UITableViewCell {
         tappedImage.setupImageViewer()
     }
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+            let containerView:UIView = {
+                let view = UIView()
+                view.translatesAutoresizingMaskIntoConstraints = false
+                view.clipsToBounds = true
+                return view
+            }()
+            
+            let profileImageView:UIImageView = {
+                let img = UIImageView()
+                img.contentMode = .scaleAspectFill
+                img.translatesAutoresizingMaskIntoConstraints = false
+                img.layer.cornerRadius = 35
+                img.clipsToBounds = true
+                img.isUserInteractionEnabled = true
+                return img
+                
+            }()
+            
+            let nameLabel:UILabel = {
+                let label = UILabel()
+                label.font = UIFont.boldSystemFont(ofSize: 20)
+                label.textColor = .black
+                label.translatesAutoresizingMaskIntoConstraints = false
+                label.lineBreakMode = NSLineBreakMode.byWordWrapping
+                label.numberOfLines = 0
+                return label
+            }()
+            
+            let jobTitleDetailedLabel:UILabel = {
+                let label = UILabel()
+                label.font = UIFont.boldSystemFont(ofSize: 14)
+                label.textColor =  .darkGray
+                label.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                label.layer.cornerRadius = 5
+                label.clipsToBounds = true
+                label.translatesAutoresizingMaskIntoConstraints = false
+                label.numberOfLines = 0
+                label.lineBreakMode = NSLineBreakMode.byWordWrapping
+                return label
+            }()
+            
+            let countryImageView:UIImageView = {
+                let img = UIImageView()
+                img.contentMode = .scaleAspectFill // without this your image will shrink and looks ugly
+                img.translatesAutoresizingMaskIntoConstraints = false
+                img.layer.cornerRadius = 13
+                img.clipsToBounds = true
+                return img
+            }()
 
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-
-        contentView.addSubview(imgvw)
-        contentView.addSubview(lblTitle)
-        contentView.addSubview(lblDescription)
-
-        imgvw.translatesAutoresizingMaskIntoConstraints = false
-        imgvw.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor).isActive = true
-        imgvw.bottomAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        imgvw.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor).isActive = true
-        imgvw.rightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.rightAnchor).isActive = true
-        let heightConstraint = imgvw.heightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.widthAnchor, multiplier: 0.6)
-        heightConstraint.priority = UILayoutPriority.defaultLow
-        heightConstraint.isActive = true
-
-        lblTitle.translatesAutoresizingMaskIntoConstraints = false
-        lblTitle.topAnchor.constraint(equalTo: imgvw.safeAreaLayoutGuide.topAnchor).isActive = true
-        lblTitle.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor).isActive = true
-        lblTitle.rightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.rightAnchor).isActive = true
-        lblTitle.numberOfLines = 0
-
-        lblDescription.translatesAutoresizingMaskIntoConstraints = false
-        lblDescription.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor).isActive = true
-        lblDescription.leftAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.leftAnchor).isActive = true
-        lblDescription.rightAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.rightAnchor).isActive = true
-        lblDescription.bottomAnchor.constraint(equalTo: imgvw.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        lblDescription.numberOfLines = 0
-
-    }
+            override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+                super.init(style: style, reuseIdentifier: reuseIdentifier)
+                
+                self.contentView.addSubview(profileImageView)
+                containerView.addSubview(nameLabel)
+                containerView.addSubview(jobTitleDetailedLabel)
+                self.contentView.addSubview(containerView)
+                
+                profileImageView.centerYAnchor.constraint(equalTo:self.contentView.centerYAnchor).isActive = true
+                profileImageView.leadingAnchor.constraint(equalTo:self.contentView.leadingAnchor, constant:10).isActive = true
+                profileImageView.widthAnchor.constraint(equalToConstant:70).isActive = true
+                profileImageView.heightAnchor.constraint(equalToConstant:70).isActive = true
+                
+                containerView.centerYAnchor.constraint(equalTo:self.contentView.centerYAnchor).isActive = true
+                containerView.leadingAnchor.constraint(equalTo:self.profileImageView.trailingAnchor, constant:10).isActive = true
+                containerView.trailingAnchor.constraint(equalTo:self.contentView.trailingAnchor, constant:-10).isActive = true
+                containerView.heightAnchor.constraint(equalToConstant:40).isActive = true
+                
+                nameLabel.topAnchor.constraint(equalTo:self.containerView.topAnchor).isActive = true
+                nameLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
+                nameLabel.trailingAnchor.constraint(equalTo:self.containerView.trailingAnchor).isActive = true
+                
+                jobTitleDetailedLabel.topAnchor.constraint(equalTo:self.nameLabel.bottomAnchor).isActive = true
+                jobTitleDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
+                jobTitleDetailedLabel.topAnchor.constraint(equalTo:self.nameLabel.bottomAnchor).isActive = true
+                jobTitleDetailedLabel.leadingAnchor.constraint(equalTo:self.containerView.leadingAnchor).isActive = true
+                
+            }
+            
+            required init?(coder aDecoder: NSCoder) {
+                super.init(coder: aDecoder)
+            }
     
-    required init?(coder: NSCoder) {
-        fatalError()
-    }
+
 }
+

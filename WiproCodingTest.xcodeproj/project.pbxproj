@@ -8,22 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		57EA1D61BD91148DFF8AA1A2 /* Pods_WiproCodingTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C470A45E1FA36E7C96A96A /* Pods_WiproCodingTest.framework */; };
-		DF6E08982442011B008A4775 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08972442011B008A4775 /* AppDelegate.swift */; };
 		DF6E089A2442011B008A4775 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08992442011B008A4775 /* SceneDelegate.swift */; };
 		DF6E08A12442011D008A4775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08A02442011D008A4775 /* Assets.xcassets */; };
 		DF6E08AF2442011D008A4775 /* WiproCodingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08AE2442011D008A4775 /* WiproCodingTestTests.swift */; };
 		DF6E08BA2442011D008A4775 /* WiproCodingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */; };
 		DF6E08CA24420223008A4775 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08C824420223008A4775 /* DashboardCell.swift */; };
-		DF6E08D224420588008A4775 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CD24420588008A4775 /* Constant.swift */; };
-		DF6E08D324420588008A4775 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CE24420588008A4775 /* Model.swift */; };
-		DF6E08D424420588008A4775 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08CF24420588008A4775 /* APIManager.swift */; };
-		DF6E08D524420588008A4775 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08D024420588008A4775 /* Extension.swift */; };
-		DF6E08D624420588008A4775 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08D124420588008A4775 /* Helper.swift */; };
 		DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */; };
-		DF6E08DD244205DC008A4775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08DA244205DB008A4775 /* Main.storyboard */; };
 		DF6E08E024420613008A4775 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08DF24420613008A4775 /* DashboardViewModel.swift */; };
 		DF6E08E324420626008A4775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08E224420626008A4775 /* ViewController.swift */; };
 		DF6E08E724420D97008A4775 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08E624420D97008A4775 /* Sample.json */; };
+		DF83E9E3245FF5C400C27164 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9DE245FF5C200C27164 /* Constant.swift */; };
+		DF83E9E4245FF5C400C27164 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9DF245FF5C300C27164 /* APIManager.swift */; };
+		DF83E9E5245FF5C400C27164 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9E0245FF5C300C27164 /* Helper.swift */; };
+		DF83E9E6245FF5C400C27164 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9E1245FF5C300C27164 /* Extension.swift */; };
+		DF83E9E7245FF5C400C27164 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9E2245FF5C400C27164 /* Model.swift */; };
+		DFBA4C2D245F12CC00D17ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA4C28245F12CA00D17ABC /* AppDelegate.swift */; };
 		EBF7A32B941572962A63EE57 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADD5C3F5816F6596A0F6A97 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework */; };
 		FB123B04347C6A310107DE92 /* Pods_WiproCodingTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE1DE74D2AACB48ACB58DC /* Pods_WiproCodingTestTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		A46FCD60585E1E0F406BE661 /* Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-WiproCodingTest-WiproCodingTestUITests/Pods-WiproCodingTest-WiproCodingTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7FE1DE74D2AACB48ACB58DC /* Pods_WiproCodingTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiproCodingTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6E08942442011B008A4775 /* WiproCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiproCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF6E08972442011B008A4775 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6E08992442011B008A4775 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DF6E08A02442011D008A4775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF6E08A52442011D008A4775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,16 +64,16 @@
 		DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiproCodingTestUITests.swift; sourceTree = "<group>"; };
 		DF6E08BB2442011D008A4775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF6E08C824420223008A4775 /* DashboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
-		DF6E08CD24420588008A4775 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		DF6E08CE24420588008A4775 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		DF6E08CF24420588008A4775 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		DF6E08D024420588008A4775 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		DF6E08D124420588008A4775 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		DF6E08D9244205DB008A4775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DF6E08DB244205DB008A4775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF6E08DF24420613008A4775 /* DashboardViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		DF6E08E224420626008A4775 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DF6E08E624420D97008A4775 /* Sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sample.json; sourceTree = "<group>"; };
+		DF83E9DE245FF5C200C27164 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		DF83E9DF245FF5C300C27164 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		DF83E9E0245FF5C300C27164 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		DF83E9E1245FF5C300C27164 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		DF83E9E2245FF5C400C27164 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DFBA4C28245F12CA00D17ABC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4839826A081FB9751011066 /* Pods-WiproCodingTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiproCodingTestTests.debug.xcconfig"; path = "Target Support Files/Pods-WiproCodingTestTests/Pods-WiproCodingTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,11 +153,11 @@
 		DF6E08962442011B008A4775 /* WiproCodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				DF6E08C724420223008A4775 /* Cell */,
 				DF6E08CC24420588008A4775 /* Model */,
 				DF6E08D7244205DB008A4775 /* View */,
 				DF6E08DE24420613008A4775 /* ViewModel */,
 				DF6E08E124420626008A4775 /* ViewController */,
+				DF6E08C724420223008A4775 /* Cell */,
 				DF6E08E424420638008A4775 /* AppDelegate */,
 				DF6E08E524420658008A4775 /* Resource */,
 				DF6E08A52442011D008A4775 /* Info.plist */,
@@ -196,11 +194,11 @@
 		DF6E08CC24420588008A4775 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DF6E08CD24420588008A4775 /* Constant.swift */,
-				DF6E08D024420588008A4775 /* Extension.swift */,
-				DF6E08CE24420588008A4775 /* Model.swift */,
-				DF6E08D124420588008A4775 /* Helper.swift */,
-				DF6E08CF24420588008A4775 /* APIManager.swift */,
+				DF83E9DF245FF5C300C27164 /* APIManager.swift */,
+				DF83E9DE245FF5C200C27164 /* Constant.swift */,
+				DF83E9E1245FF5C300C27164 /* Extension.swift */,
+				DF83E9E0245FF5C300C27164 /* Helper.swift */,
+				DF83E9E2245FF5C400C27164 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,8 +206,6 @@
 		DF6E08D7244205DB008A4775 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */,
-				DF6E08DA244205DB008A4775 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -233,8 +229,8 @@
 		DF6E08E424420638008A4775 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				DF6E08972442011B008A4775 /* AppDelegate.swift */,
 				DF6E08992442011B008A4775 /* SceneDelegate.swift */,
+				DFBA4C28245F12CA00D17ABC /* AppDelegate.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -242,6 +238,7 @@
 		DF6E08E524420658008A4775 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */,
 				DF6E08A02442011D008A4775 /* Assets.xcassets */,
 				DF6E08E624420D97008A4775 /* Sample.json */,
 			);
@@ -360,7 +357,6 @@
 				DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */,
 				DF6E08E724420D97008A4775 /* Sample.json in Resources */,
 				DF6E08A12442011D008A4775 /* Assets.xcassets in Resources */,
-				DF6E08DD244205DC008A4775 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,16 +484,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF83E9E6245FF5C400C27164 /* Extension.swift in Sources */,
+				DFBA4C2D245F12CC00D17ABC /* AppDelegate.swift in Sources */,
 				DF6E08E324420626008A4775 /* ViewController.swift in Sources */,
 				DF6E08E024420613008A4775 /* DashboardViewModel.swift in Sources */,
-				DF6E08982442011B008A4775 /* AppDelegate.swift in Sources */,
-				DF6E08D224420588008A4775 /* Constant.swift in Sources */,
-				DF6E08D324420588008A4775 /* Model.swift in Sources */,
 				DF6E08CA24420223008A4775 /* DashboardCell.swift in Sources */,
-				DF6E08D624420588008A4775 /* Helper.swift in Sources */,
+				DF83E9E7245FF5C400C27164 /* Model.swift in Sources */,
 				DF6E089A2442011B008A4775 /* SceneDelegate.swift in Sources */,
-				DF6E08D424420588008A4775 /* APIManager.swift in Sources */,
-				DF6E08D524420588008A4775 /* Extension.swift in Sources */,
+				DF83E9E3245FF5C400C27164 /* Constant.swift in Sources */,
+				DF83E9E4245FF5C400C27164 /* APIManager.swift in Sources */,
+				DF83E9E5245FF5C400C27164 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,14 +535,6 @@
 				DF6E08D9244205DB008A4775 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		DF6E08DA244205DB008A4775 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF6E08DB244205DB008A4775 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

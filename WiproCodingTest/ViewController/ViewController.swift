@@ -61,13 +61,14 @@ class ViewController: UIViewController {
 
         tblvw.translatesAutoresizingMaskIntoConstraints = false
         tblvw.topAnchor.constraint(equalTo:view.safeAreaLayoutGuide.topAnchor).isActive = true
-        tblvw.leadingAnchor.constraint(equalTo:view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        tblvw.trailingAnchor.constraint(equalTo:view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        tblvw.leftAnchor.constraint(equalTo:view.safeAreaLayoutGuide.leftAnchor).isActive = true
+        tblvw.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
         tblvw.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+
         
         tblvw.tableFooterView = UIView()
         tblvw.estimatedRowHeight = UITableView.automaticDimension
-        tblvw.rowHeight = 400
+        tblvw.rowHeight = 100
 
         if #available(iOS 10.0, *) {
             tblvw.refreshControl = refreshCtrl
@@ -99,7 +100,9 @@ extension APIConfiguration {
                         guard let selfS = self else {return}
                         
                         selfS.setUpNavigation(with: fullmodel.title)
-                        if let temparr = fullmodel.rows, temparr.count > 0 {
+                        if var temparr = fullmodel.rows, temparr.count > 0 {
+                            //remove empty element from array
+                            temparr = temparr.filter{($0.imageHref != nil) || ($0.title != nil) || ($0.description != nil)}
                             selfS.arrInfo = temparr
                             
                             selfS.tblvw.reloadData()

@@ -16,8 +16,6 @@ import AlamofireImage
 
 
 
-
-
 extension UIView {
     func setRoundCornder(_ borderWid:CGFloat = 1.0, _ borderClr:UIColor = .lightGray) {
         self.layer.masksToBounds = true
@@ -26,9 +24,7 @@ extension UIView {
         self.layer.borderColor = borderClr.cgColor
         self.layer.borderWidth = borderWid
     }
-    
 }
-
 
 extension UIImageView {
     func setImageFromAlmofireURL(strImgURL:String, isShowIndicator:Bool = false, placeholderimg:UIImage? = Placeholder.noImage, completionHandler:(_ success:Bool) -> () ) {
@@ -47,17 +43,13 @@ extension UIImageView {
         
         guard let url = URL(string: strImgURL) else {return}
         
-        
         self.af.setImage(withURL: url, cacheKey: nil, placeholderImage: Placeholder.noImage, serializer: nil, filter: nil, progress: nil, progressQueue: DispatchQueue.main, imageTransition: ImageTransition.crossDissolve(0), runImageTransitionIfCached: true) { (imgData) in
-        
-                    if (isShowIndicator) {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
-                            activityIndicator.stopAnimating()
-                        })
-                    }
-                
+        if (isShowIndicator) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1, execute: {
+                activityIndicator.stopAnimating()
+            })
         }
-                        
+        }
     }
 }
 
