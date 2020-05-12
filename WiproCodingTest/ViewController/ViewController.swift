@@ -23,14 +23,11 @@ class ViewController: UIViewController {
         return refreshContol
     }()
 
-    lazy var tblvw: UITableView = {
+    private lazy var tblvw: UITableView = {
         let table = UITableView()
         table.separatorColor = .lightGray
-
-        table.register(DashboardCell.self, forCellReuseIdentifier: CellManager.cellIdentifier)
-        
         table.dataSource = self
-        table.delegate = self
+        table.register(DashboardCell.self, forCellReuseIdentifier: CellManager.cellIdentifier)
         return table
     }()
 
@@ -50,10 +47,9 @@ class ViewController: UIViewController {
 
     func setUpNavigation(with title:String?) {
         navigationItem.title = title
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 0, blue: 1
-            , alpha: 1)
+        self.navigationController?.navigationBar.barTintColor = UIColor.darkGray
         self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white, NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 22)!]
     }
     
     func setupTableview() {
@@ -65,7 +61,6 @@ class ViewController: UIViewController {
         tblvw.rightAnchor.constraint(equalTo:view.safeAreaLayoutGuide.rightAnchor).isActive = true
         tblvw.bottomAnchor.constraint(equalTo:view.safeAreaLayoutGuide.bottomAnchor).isActive = true
 
-        
         tblvw.tableFooterView = UIView()
         tblvw.estimatedRowHeight = UITableView.automaticDimension
         tblvw.rowHeight = 120
@@ -75,13 +70,13 @@ class ViewController: UIViewController {
         } else {
             tblvw.addSubview(refreshCtrl)
         }
-
     }
     
     @objc func doRefresh(_ sender:UIRefreshControl) {
         sender.endRefreshing()
         getAboutCanada()
     }
+    
 }
 
 private typealias APIConfiguration = ViewController
@@ -102,7 +97,7 @@ extension APIConfiguration {
                         selfS.setUpNavigation(with: fullmodel.title)
                         if var temparr = fullmodel.rows, temparr.count > 0 {
                             //remove empty element from array
-                            temparr = temparr.filter{($0.imageHref != nil) || ($0.title != nil) || ($0.description != nil)}
+                            temparr = temparr.filter{($0.imageHref != nil) && ($0.title != nil) && ($0.description != nil) }
                             selfS.arrInfo = temparr
                             
                             selfS.tblvw.reloadData()
@@ -126,11 +121,11 @@ extension APIConfiguration {
                 selfS.refreshCtrl.endRefreshing()
             })
         }
-
     }
     
 }
 
+//MARK: - Tableview delegate methods
 private typealias TableviewConfiguration = ViewController
 extension TableviewConfiguration: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -150,9 +145,6 @@ extension TableviewConfiguration: UITableViewDataSource {
 
 }
 
-extension TableviewConfiguration: UITableViewDelegate {
-
-}
 
 
 

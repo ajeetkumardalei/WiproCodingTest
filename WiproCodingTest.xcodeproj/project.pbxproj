@@ -13,7 +13,6 @@
 		DF6E08AF2442011D008A4775 /* WiproCodingTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08AE2442011D008A4775 /* WiproCodingTestTests.swift */; };
 		DF6E08BA2442011D008A4775 /* WiproCodingTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08B92442011D008A4775 /* WiproCodingTestUITests.swift */; };
 		DF6E08CA24420223008A4775 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08C824420223008A4775 /* DashboardCell.swift */; };
-		DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */; };
 		DF6E08E024420613008A4775 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08DF24420613008A4775 /* DashboardViewModel.swift */; };
 		DF6E08E324420626008A4775 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6E08E224420626008A4775 /* ViewController.swift */; };
 		DF6E08E724420D97008A4775 /* Sample.json in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08E624420D97008A4775 /* Sample.json */; };
@@ -22,6 +21,7 @@
 		DF83E9E5245FF5C400C27164 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9E0245FF5C300C27164 /* Helper.swift */; };
 		DF83E9E6245FF5C400C27164 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9E1245FF5C300C27164 /* Extension.swift */; };
 		DF83E9E7245FF5C400C27164 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF83E9E2245FF5C400C27164 /* Model.swift */; };
+		DF936783246911F5000A57FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6E08D8244205DB008A4775 /* LaunchScreen.storyboard */; };
 		DFBA4C2D245F12CC00D17ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBA4C28245F12CA00D17ABC /* AppDelegate.swift */; };
 		EBF7A32B941572962A63EE57 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADD5C3F5816F6596A0F6A97 /* Pods_WiproCodingTest_WiproCodingTestUITests.framework */; };
 		FB123B04347C6A310107DE92 /* Pods_WiproCodingTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FE1DE74D2AACB48ACB58DC /* Pods_WiproCodingTestTests.framework */; };
@@ -354,7 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6E08DC244205DC008A4775 /* LaunchScreen.storyboard in Resources */,
+				DF936783246911F5000A57FB /* LaunchScreen.storyboard in Resources */,
 				DF6E08E724420D97008A4775 /* Sample.json in Resources */,
 				DF6E08A12442011D008A4775 /* Assets.xcassets in Resources */,
 			);
@@ -667,7 +667,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ness.WiproCodingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -688,7 +688,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ness.WiproCodingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -702,7 +702,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproCodingTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,6 +713,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiproCodingTest.app/WiproCodingTest";
@@ -724,7 +727,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WiproCodingTestTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,6 +738,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Persistent.WiproCodingTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiproCodingTest.app/WiproCodingTest";
